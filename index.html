@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeoTrip</title>
+    <link rel="stylesheet" href="./src/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="fixed-top navbar navbar-expand-lg bg-body-tertiary pt-3 pb-3">
+        <div class="container">
+          <img class="logo" src="./src/images/logo.png" alt="">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown mx-2">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Home
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Home version 01</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Home version 02</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Home version 03</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Home version 04</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Home version 05</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Home version 06</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item dropdown mx-2">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Listing
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Hotel</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Flight</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Rental</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Car</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Destination</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Join with GeoTrip</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item dropdown mx-2">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Pages
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Blog</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Authentication</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">About Us</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Career Pages</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Help Center</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">FAQ's</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item dropdown mx-2">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Menu
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Blog</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Authentication</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">About Us</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Career Pages</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Help Center</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">FAQ's</a></li>
+                    </ul>
+                  </li>
+
+              <li class="nav-item mx-2">
+          <a class="nav-link active" aria-current="page" href="#">Docs</a>
+        </li>
+            </ul>
+         <button class="butn1">
+            PAK
+         </button>
+
+         <button class="butn2">
+            <img class="butn-img" src="./src/images/flag-removebg-preview.png" alt="">
+         </button>
+
+         <button class="butn3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle mx-1 " viewBox="0 0 16 16">
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+              </svg>  Sign In / Register
+         </button>
+          </div>
+        </div>
+      </nav>
+
+
+
+      
+
+        <div class="banner-div">
+          <h1 class="bg-text text-center">Starts Your Trip with GeoTrip <h1 class="underline"></h1> </h1>
+          <h1 class="bg-caption">Take a little break from the work strss of everyday. Discover plan trip and explore beautiful</h1>
+          <h1 class="bg-caption">destinations.</h1>
+
+          <div class="form-div container">
+            <form action="">
+              <br>
+              <div class="fd-1">
+                <div class="radio-div col-12 col-sm-6">
+                  <input class="rd-1" type="radio" name="return">Return
+                  <input type="radio" name="return">One Way
+                </div> 
+                <div class="inp-div1 ">
+                  <input class="form-inp1" type="text" placeholder="Adults">
+                  <input class="form-inp1" type="text" placeholder="Economy">
+                </div>
+              </div><br>
+            <div class="fd-2">
+              <input class="form-inp2 media-1" type="text" placeholder="Leaving From">
+              <input class="form-inp2 media-2" type="text" placeholder="Going To">
+              <input class="form-inp3 media-3" type="text" placeholder="Departure.." onclick="(this.type='date')">
+              <input class="form-inp3 media-4" type="text" placeholder="Return.." onclick="(this.type='date')">
+              <button class="butn4 media-5"><i class="fa-solid fa-magnifying-glass icon1" style="color: #ffffff;"></i>Search</button>
+            </div>
+            </form>
+          </div>
+        </div><br>
+<br> <br>
+
+        <div>
+          <div class="container text-center">
+            <div class="row align-items-start">
+              <div class="text-start col-12 col-sm-3">
+                <i class="fa-solid fa-2xl fa-sack-dollar" style="color: #cd2c22;"></i><br>
+                <br>
+                <h1 class="text-1">Easy Booking</h1>
+                <p class="card-para">Cicero famously orated against his political opponent Lucius Sergius Catilina. Occasionally the first Oration against Catiline.</p>
+
+              </div>
+              <div class="text-start col-12 col-sm-3">
+                <i class="fa-solid fa-umbrella-beach fa-2xl" style="color: #cd2c22;"></i><br><br>
+                <h1 class="text-1">Best Destinations</h1>
+                
+                <p class="card-para">Cicero famously orated against his political opponent Lucius Sergius Catilina. Occasionally the first Oration against Catiline.</p>
+              </div>
+              <div class="text-start col-12 col-sm-3">
+                <i class="fa-solid fa-person-walking-luggage fa-2xl" style="color: #cd2c22;"></i><br>
+                <br>
+                <h1 class="text-1">Travel Guides</h1>
+                <p class="card-para">Cicero famously orated against his political opponent Lucius Sergius Catilina. Occasionally the first Oration against Catiline.</p>
+              </div>
+              <div class="text-start col-12 col-sm-3">
+                <i class="fa-solid fa-headset fa-2xl" style="color: #cd2c22;"></i></i><br>
+                <br>
+                <h1 class="text-1">Travel Guides</h1>
+                <p class="card-para">Cicero famously orated against his political opponent Lucius Sergius Catilina. Occasionally the first Oration against Catiline.</p>
+              </div>
+            </div>
+          </div>       
+          </div>
+          <br> <br>
+            <hr>
+            <br><br><br>
+          <h2 class="exp-head">Explore Popular Destination</h2>
+          <p class="exp-para">Cicero famously orated against his political opponent Lucius Sergius Catilina.</p>
+       <br>
+       <br>
+       <div class="container text-center">
+        <div class="row align-items-start">
+          <div class="col-xl-3 col-lg-4 col-md-4 col-sm-1 exp-div"> 
+      <img src="src/images/exp1.png" alt="" class="exp-img ">
+      <br> <br>
+      <h3 class="exp-text">New York</h3>
+      <p class="exp-para">10 Destinations : 5 Hotels</p>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 exp-div ">
+        
+            <img src="src/images/exp2.png" alt="" class="exp-img">
+            <br> <br>
+            <h3 class="exp-text">Las Vegas</h3>
+            <p class="exp-para">09 Destinations : 16 Hotels</p>
+                </div>
+             
+              <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 exp-div">
+            
+                <img src="src/images/exp3.png" alt="" class="exp-img">
+                <br> <br>
+                <h3 class="exp-text">San Antonio</h3>
+                <p class="exp-para">06 Destinations : 14 Hotels</p>
+                    </div>
+                  
+                  <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 exp-div">
+                
+                    <img src="src/images/exp4.png" alt="" class="exp-img">
+                    <br> <br>
+                    <h3 class="exp-text">Houston</h3>
+                    <p class="exp-para">07 Destinations : 18 Hotels</p>
+                        </div>
+                      </div>
+                    </div>
+                  <br>
+                  <div class="container text-center">
+                    <div class="row align-items-start">
+                      <div class="col-xl-3 col-lg-4 col-md-4 col-sm-1 exp-div"> 
+                  <img src="src/images/exp5.png" alt="" class="exp-img ">
+                  <br> <br>
+                  <h3 class="exp-text">San Francisco</h3>
+                  <p class="exp-para">4 Destinations : 12 Hotels</p>
+                      </div>
+                      <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 exp-div ">
+                    
+                        <img src="src/images/exp6.png" alt="" class="exp-img">
+                        <br> <br>
+                        <h3 class="exp-text">Nashville</h3>
+                        <p class="exp-para">16 Destinations : 07 Hotels</p>
+                            </div>
+                         
+                          <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 exp-div">
+                        
+                            <img src="src/images/exp7.ong.png" alt="" class="exp-img">
+                            <br> <br>
+                            <h3 class="exp-text">Philadelphia</h3>
+                            <p class="exp-para">14 Destinations : 10 Hotels</p>
+                                </div>
+                              
+                              <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 exp-div">
+                            
+                                <img src="src/images/exp8.png" alt="" class="exp-img">
+                                <br> <br>
+                                <h3 class="exp-text">San Diego</h3>
+                                <p class="exp-para">12 Destinations : 32 Hotels</p>
+                                    </div>
+                            </div>
+                           </div>
+      <br> <br> <br>
+  <div class="card-div2 container-fluid" >
+<br>
+<br> <br>
+<h2 class="exp-head">Explore Popular Routes</h2>
+<p class="exp-para">Cicero famously orated against his political opponent Lucius Sergius Catilina.</p>
+<br>
+<div class="card-group container">
+  <div class="card  mx-1 border-radius">
+    <img src="src/images/tr-1.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h6 class="exp-head text-start">New York <i class="fa-sharp fa-solid fa-arrow-right-arrow-left" style="color: #647187;"></i> Los Angles</h6>
+      <p class="exp-para text-start">Round trip : 3 days</p>
+     <p class="text-end"> <span class="from">From</span><span class="dollar">US$492</span></p>
+     </div>
+    </div>
+  
+  <div class="card  mx-1">
+    <img src="src/images/tr-2.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h6 class="exp-head text-start">San Diego <i class="fa-sharp fa-solid fa-arrow-right-arrow-left" style="color: #647187;"></i> 
+        San Jose</h6>
+      <p class="exp-para text-start">Round trip : 3 days</p>
+     <p class="text-end"> <span class="from">From</span><span class="dollar">US$492</span></p>
+    </div>
+  </div>
+  <div class="card  mx-1">
+    <img src="src/images/tr-3.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h6 class="exp-head text-start">Dallas <i class="fa-sharp fa-solid fa-arrow-right-arrow-left" style="color: #647187;">
+      </i> Philadelphia </h6>
+      <p class="exp-para text-start">Round trip : 3 days</p>
+     <p class="text-end"> <span class="from">From</span><span class="dollar">US$492</span></p>
+    </div>
+  </div>
+  <div class="card  mx-1">
+    <img src="src/images/tr-4.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h6 class="exp-head text-start">Denver <i class="fa-sharp fa-solid fa-arrow-right-arrow-left" style="color: #647187;">
+      </i> Nashville</h6>
+      <p class="exp-para text-start">Round trip : 3 days</p>
+     <p class="text-end"> <span class="from">From</span><span class="dollar">US$492</span></p>
+    </div>
+  </div>
+</div>
+  
+  <br>
+  <div class="card-group container">
+    <div class="card  mx-1 border-radius">
+      <img src="src/images/tr-5.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h6 class="exp-head text-start">Chicago
+           <i class="fa-sharp fa-solid fa-arrow-right-arrow-left" style="color: #647187;"></i> Francisco</h6>
+        <p class="exp-para text-start">Round trip : 3 days</p>
+       <p class="text-end"> <span class="from">From</span><span class="dollar">US$492</span></p>
+       </div>
+      </div>
+    
+    <div class="card  mx-1">
+      <img src="src/images/tr-6.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h6 class="exp-head text-start">Houston <i class="fa-sharp fa-solid fa-arrow-right-arrow-left" style="color: #647187;"></i> 
+          Los Angeles</h6>
+        <p class="exp-para text-start">Round trip : 3 days</p>
+       <p class="text-end"> <span class="from">From</span><span class="dollar">US$492</span></p>
+      </div>
+    </div>
+    <div class="card  mx-1">
+      <img src="src/images/tr-7.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h6 class="exp-head text-start">San Antonio <i class="fa-sharp fa-solid fa-arrow-right-arrow-left" style="color: #647187;">
+        </i> Columbus </h6>
+        <p class="exp-para text-start">Round trip : 3 days</p>
+       <p class="text-end"> <span class="from">From</span><span class="dollar">US$492</span></p>
+      </div>
+    </div>
+    <div class="card  mx-1">
+      <img src="src/images/tr-8.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h6 class="exp-head text-start">  Los Angeles<i class="fa-sharp fa-solid fa-arrow-right-arrow-left" style="color: #647187;">
+        </i> Canada</h6>
+        <p class="exp-para text-start">Round trip : 3 days</p>
+       <p class="text-end"> <span class="from">From</span><span class="dollar">US$492</span></p>
+      </div>
+    </div>
+  </div> 
+  <br> <br>
+  <button class="explore text-center">Explore more
+    <i class="fa-solid fa-arrow-trend-up fa-lg"></i>
+  </button><br><br><br><br>
+    </div>  
+
+    <div class="container pic-card">
+
+      <div class="col-12 col-sm-6">
+        <img class="img-4" src="./src/images/img-3.png" alt="">
+      </div>
+
+      <div class="col-12 col-sm-6">
+        <div class="container ">
+          <div class="row align-items-start">
+            <div class="col-12 col-sm-6 ">
+              <i class="fa-solid  fa-gifts text-center icon-1 pt-4  fa-2xl" style="color: #e01f1f;"></i>
+              <br><br>
+              <br>
+                  <h3 class="exp-text">Get Superb Deals</h3>
+                  <p class="exp-para text-start">Just fill up a page with draft copy about the client’s business and they will actually read it and comment on it. They will be drawn to it, fiercely. Do it the wrong way.</p>
+            </div>
+            <div class="col-12 col-sm-6">
+              <i class="fa-solid fa-gifts text-center icon-2 pt-4 fa-2xl" style="color: #106bda;"></i>
+              <br><br><br>
+                  <h3 class="exp-text">100% Transparency Price</h3>
+                  <p class="exp-para text-start">Just fill up a page with draft copy about the client’s business and they will actually read it and comment on it. They will be drawn to it, fiercely. Do it the wrong way.</p>
+            </div><br>
+            <div class="col-12 col-sm-6">
+              <i class="fa-solid fa-gifts text-center icon-3 pt-4 fa-2xl" style="color: #27a974;"></i>
+              <br><br><br>
+                  <h3 class="exp-text">Pure Trusted & Free</h3>
+                  <p class="exp-para text-start">Just fill up a page with draft copy about the client’s business and they will actually read it and comment on it. They will be drawn to it, fiercely. Do it the wrong way.</p>
+            </div>
+            <div class="col-12 col-sm-6">
+              <i class="fa-solid fa-gifts text-center icon-4 pt-4 fa-2xl" style="color: #ffc107;"></i>
+              <br><br><br>
+              <h3 class="exp-text">Travel With Confidence</h3>
+              <p class="exp-para text-start">Just fill up a page with draft copy about the client’s business and they will actually read it and comment on it. They will be drawn to it, fiercely. Do it the wrong way.</p>
+            </div>
+          </div><br><br>
+
+    </div>
+    </div>
+    </div>
+  
+
+    <video class="vid"  poster="src/images/video banner-.jpg" width="100%" height="600px" preload controls loop
+    src="./src/images/Solodev Top Rated Web Design & Content Management CMS Software For Amazon AWS & More..mp4"></video>
+
+
+    <div class="loving-reviews container-fluid">
+      <br /><br /><br />
+      <h1 class="hot">Loving Reviews By Our Customers</h1>
+      <p class="hotp">
+        Cicero famously orated against his political opponent Lucius Sergius
+        Catilina.
+      </p>
+      <div class="container text-center">
+        <div class="row align-items-start">
+          <div class="col-12 col-sm-4 mb-4 review-div text-start">
+            <div class="usa">
+              <img src="src/images/team-1.jpg" alt="" class="customer-img" />
+              <ul class="ff">
+                <span class="divan"><li class="aman">Aman Diwakar</li></span>
+                <li class="aman">united States</li>
+
+                <li class="aman">
+                  <i class="fa-solid fa-star" style="color: #ffa500;"></i>
+                  <i class="fa-solid fa-star" style="color: #ffa500;"></i>
+                  <i class="fa-solid fa-star" style="color: #ffa500;"></i>
+                  <i class="fa-solid fa-star" style="color: #ffa500;"></i>
+                </li>
+              </ul>
+              <i
+                class="bi bg-danger-subtle text-danger bi-chat-quote quote rounded-circle"
+              ></i>
+            </div>
+            <br />
+            <p class="reviewtext">
+              Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit
+              aut fugit, sed quia consequuntur magni dolores eos, qui ratione
+              voluptatem sequi nesciunt
+            </p>
+          </div>
+
+          <div class="col-12 mb-4 col-sm-4 mb-4 review-div text-start">
+            <div class="usa">
+              <img src="src/images/team-2.jpg" alt="" class="customer-img" />
+              <ul class="ff">
+                <span class="divan"><li class="aman">Kunal M. Thakur</li></span>
+                <li class="aman">united States</li>
+
+                <li class="aman">
+                  <i class="fa-solid fa-star" style="color: #ffa500;"></i>
+                  <i class="fa-solid fa-star" style="color: #ffa500;"></i>
+                  <i class="fa-solid fa-star" style="color: #ffa500;"></i>
+                  <i class="fa-solid fa-star" style="color: #ffa500;"></i>
+                </li>
+              </ul>
+              <i
+                class="bi bg-danger-subtle text-danger bi-chat-quote quote rounded-circle"
+              ></i>
+            </div>
+            <br />
+            <p class="reviewtext">
+              Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit
+              aut fugit, sed quia consequuntur magni dolores eos, qui ratione
+              voluptatem sequi nesciunt
+            </p>
+          </div>
+
+          <div class="col-12 col-sm-4 mb-4 review-div text-start">
+            <div class="usa">
+              <img src="src/images/team-3.jpg" alt="" class="customer-img" />
+              <ul class="ff">
+                <span class="divan"><li class="aman">Divya Talwar</li></span>
+                <li class="aman">united States</li>
+
+                <li class="aman">
+                  <i class="fa-solid fa-star" style="color: #ffa500;"></i>
+                  <i class="fa-solid fa-star" style="color: #ffa500;"></i>
+                  <i class="fa-solid fa-star" style="color: #ffa500;"></i>
+                  <i class="fa-solid fa-star" style="color: #ffa500;"></i>
+                </li>
+              </ul>
+              <i
+                class="bi bg-danger-subtle text-danger bi-chat-quote quote rounded-circle"
+              ></i>
+            </div>
+            <br />
+            <p class="reviewtext">
+              Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit
+              aut fugit, sed quia consequuntur magni dolores eos, qui ratione
+              voluptatem sequi nesciunt
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container text-center">
+        <div class="row justify-content-center align-items-start">
+          <div class="col-12 col-sm-4 mx-4 mb-4 review-div text-start">
+            <div class="usa">
+              <img src="src/images/team-4.jpg" alt="" class="customer-img" />
+              <ul class="ff">
+                <span class="divan"
+                  ><li class="aman">Karan Maheshwari</li></span
+                >
+                <li class="aman">united States</li>
+
+                <li class="aman">
+                  <i class="fa-solid fa-star" style="color: #ffa500;"></i>
+                  <i class="fa-solid fa-star" style="color: #ffa500;"></i>
+                  <i class="fa-solid fa-star" style="color: #ffa500;"></i>
+                  <i class="fa-solid fa-star" style="color: #ffa500;"></i>
+                </li>
+              </ul>
+              <i
+                class="bi bg-danger-subtle text-danger bi-chat-quote quote rounded-circle"
+              ></i>
+            </div>
+            <br />
+            <p class="reviewtext">
+              Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit
+              aut fugit, sed quia consequuntur magni dolores eos, qui ratione
+              voluptatem sequi nesciunt
+            </p>
+          </div>
+
+          <div class="col-12 mb-4 col-sm-4 mb-4 review-div text-start">
+            <div class="usa">
+              <img src="src/images/team-5.jpg" alt="" class="customer-img" />
+              <ul class="ff">
+                <span class="divan"><li class="aman">Ritika Mathur</li></span>
+                <li class="aman">united States</li>
+
+                <li class="aman">
+                  <i class="fa-solid fa-star" style="color: #ffa500;"></i>
+                  <i class="fa-solid fa-star" style="color: #ffa500;"></i>
+                  <i class="fa-solid fa-star" style="color: #ffa500;"></i>
+                  <i class="fa-solid fa-star" style="color: #ffa500;"></i>
+                </li>
+              </ul>
+              <i
+                class="bi bg-danger-subtle text-danger bi-chat-quote quote rounded-circle"
+              ></i>
+            </div>
+            <br />
+            <p class="reviewtext">
+              Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit
+              aut fugit, sed quia consequuntur magni dolores eos, qui ratione
+              voluptatem sequi nesciunt
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br /><br /><br />
+
+    <h1 class="hot">Trending & Popular Articles</h1>
+    <p class="hotp">
+      Cicero famously orated against his political opponent Lucius Sergius
+      Catilina.
+    </p>
+    <br />
+
+    <div class="card-group container">
+      <div class="card mx-3 blog-card">
+        <img src="src/images/blog-1.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <button class="cardbut text-success bg-success-subtle">
+            Destination
+          </button>
+          <p class="card-heading">
+            Make Your Next Journey Delhi To Paris in Comfirtable And Best Price
+          </p>
+          <p class="card-text blogtext">
+            Think of a news blog that's filled with content hourly on the
+            Besides, random text risks to be unintendedly humorous or offensive
+            day of going live..
+          </p>
+          <p class="card-text more">
+            Read More
+            <i class="fa-solid fa-arrow-trend-up" style="color: #e00000"></i>
+          </p>
+        </div>
+      </div>
+      <div class="card mx-3 blog-card">
+        <img src="src/images/blog-2.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <button class="cardbut text-success bg-success-subtle">
+            Journey
+          </button>
+          <p class="card-heading">
+            Make Your Next Journey Delhi To Paris in Comfirtable And Best Price
+          </p>
+          <p class="card-text blogtext">
+            Think of a news blog that's filled with content hourly on the
+            Besides, random text risks to be unintendedly humorous or offensive
+            day of going live..
+          </p>
+          <p class="card-text more">
+            Read More
+            <i class="fa-solid fa-arrow-trend-up" style="color: #e00000"></i>
+          </p>
+        </div>
+      </div>
+      <div class="card mx-3 blog-card">
+        <img src="src/images/blog-3.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <button class="cardbut text-success bg-success-subtle">
+            Bussiness
+          </button>
+          <p class="card-heading">
+            Make Your Next Journey Delhi To Paris in Comfirtable And Best Price
+          </p>
+          <p class="card-text blogtext">
+            Think of a news blog that's filled with content hourly on the
+            Besides, random text risks to be unintendedly humorous or offensive
+            day of going live..
+          </p>
+          <p class="card-text more">
+            Read More
+            <i class="fa-solid fa-arrow-trend-up" style="color: #e00000"></i>
+          </p>
+        </div>
+      </div>
+    </div><br><br><br>
+
+    <div class="footer-div-1 ">
+      <div class="foot-cap container">
+        <h1 class="fc-1 pt-5">Join our Newsletter To Keep Up <br> To Date With Us!</h1>
+      </div>
+      
+
+
+    </div>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <script
+    src="https://kit.fontawesome.com/a0852100a1.js"
+    crossorigin="anonymous"
+  ></script>
+</body>
+</html>
